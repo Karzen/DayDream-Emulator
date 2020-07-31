@@ -1,0 +1,44 @@
+sar 14 
+
+adu rg1 1
+sar 40
+
+adu rg2 1
+sar 40
+
+sca rg1 1
+sar 40
+
+sca rg2 1
+sar 40
+
+ega rg6 48
+inv rg6
+srd rg6 20
+sto 20 0
+sto 0 1
+
+inc rg1 0
+inc rg2 1
+mut rg3 rsn
+
+ega rg3 4
+srd rg3 5
+mut rg3 rsn
+
+ega rg3 1
+srd rg3 2
+mut rg3 rsn
+
+ega rg3 2
+srd rg3 8
+mut rg3 rsn
+
+ega rg3 3
+srd rg3 11
+mut rg3 rsn
+
+mut rsc 1
+vrm rg1 rg2
+sto rg1 0
+sto rg2 1
